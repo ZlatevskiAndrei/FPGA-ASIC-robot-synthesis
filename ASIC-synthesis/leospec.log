@@ -1,0 +1,160 @@
+LeonardoSpectrum Level 3 - 2017a.2 (Release Production Release, compiled Jul 18 2017 at 03:19:48)
+Copyright 1990-2017 Mentor Graphics.  All rights reserved.
+Portions copyright 1991-2017 Compuware Corporation
+
+Session history will be logged to file '/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/leospec.his'
+--
+-- Welcome to LeonardoSpectrum Level 3
+-- Run Started On Wed Apr 15 09:17:03 CEST 2026
+--
+Reading library file `/softslin/leonardo2017a/lib/c35_CORELIB.syn`...
+Delays assume: Process=typical Temp= 25.0 C  Voltage=3.30 V  
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+Info: setting encoding to Binary
+Binary
+-- Reading file /softslin/leonardo2017a/data/standard.vhd for unit standard
+-- Loading package standard into library std
+-- Reading vhdl file /tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd into library work
+-- Reading file /softslin/leonardo2017a/data/std_1164.vhd for unit std_logic_1164
+-- Loading package std_logic_1164 into library IEEE
+-- Reading file /softslin/leonardo2017a/data/numeric_std.vhd for unit numeric_std
+-- Loading package NUMERIC_STD into library IEEE
+-- Loading entity Robot into library work
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 18: Info, Enumerated type States with 9 elements encoded as Binary.
+Encodings for States values
+        value    States[3-0]
+============================
+           idle  0000
+        resting  -001
+     randomwalk  -010
+         homing  -011
+     movetofood  -100
+      scanarena  -101
+       grabfood  -110
+     movetohome  -111
+        deposit  1000
+
+-- Loading architecture intf of Robot into library work
+-- Compiling root entity Robot(intf)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Robot.intf
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Robot.intf
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL robot_binary.vhd
+-- Writing file robot_binary.vhd
+Info, Command 'auto_write' finished successfully
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd into library work
+-- Loading entity Robot into library work
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 5: Warning, replacing Robot in HDL library work.
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 18: Info, Enumerated type States with 9 elements encoded as Gray.
+Encodings for States values
+        value    States[3-0]
+============================
+           idle  0000
+        resting  0001
+     randomwalk  0011
+         homing  0010
+     movetofood  0110
+      scanarena  0111
+       grabfood  0101
+     movetohome  0100
+        deposit  1100
+
+-- Loading architecture intf of Robot into library work
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 17: Warning, replacing intf of entity Robot.
+-- Compiling root entity Robot(intf)
+-- Info, replacing Robot(intf)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Robot.intf
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Robot.intf
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info, Command 'report_area' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL robot_gray.vhd
+-- Writing file robot_gray.vhd
+Info, Command 'auto_write' finished successfully
+Info: setting encoding to OneHot
+OneHot
+-- Reading vhdl file /tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd into library work
+-- Loading entity Robot into library work
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 5: Warning, replacing Robot in HDL library work.
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 18: Info, Enumerated type States with 9 elements encoded as OneHot.
+Encodings for States values
+        value    States[8-0]
+============================
+           idle  --------1
+        resting  -------1-
+     randomwalk  ------1--
+         homing  -----1---
+     movetofood  ----1----
+      scanarena  ---1-----
+       grabfood  --1------
+     movetohome  -1-------
+        deposit  1--------
+
+-- Loading architecture intf of Robot into library work
+"/tp/xm1iarc/xm1iarc011/projet_asic/Project/Synth/robot.vhd",line 17: Warning, replacing intf of entity Robot.
+-- Compiling root entity Robot(intf)
+-- Info, replacing Robot(intf)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Robot.intf
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Robot.intf
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Robot.intf
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL robot_onehot.vhd
+-- Writing file robot_onehot.vhd
+Info, Command 'auto_write' finished successfully
