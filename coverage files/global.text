@@ -1,0 +1,23 @@
+QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 17 2018
+Start time: 11:44:14 on Mar 25,2026
+vcover report global.cov 
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: Sources/robot.vhd
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           50        50         0    100.00
+    Branches                        50        50         0    100.00
+    FSMs                                                       83.33
+        States                      11        11         0    100.00
+        Transitions                 24        16         8     66.66
+
+
+Total Coverage By File (code coverage only, filtered view): 94.44%
+
+End time: 11:44:14 on Mar 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+
